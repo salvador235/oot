@@ -14,8 +14,8 @@ SceneCmd kokiri_home3_room_0Commands[] = {
     SCENE_CMD_SKYBOX_DISABLES(false, true),
     SCENE_CMD_TIME_SETTINGS(255, 255, 0),
     SCENE_CMD_MESH(&kokiri_home3_room_0MeshHeader1Single_002090),
-    SCENE_CMD_OBJECT_LIST(4, kokiri_home3_room_0ObjectList_000040),
-    SCENE_CMD_ACTOR_LIST(4, kokiri_home3_room_0ActorList_000048),
+    SCENE_CMD_OBJECT_LIST(5, kokiri_home3_room_0ObjectList_000040),
+    SCENE_CMD_ACTOR_LIST(6, kokiri_home3_room_0ActorList_000048),
     SCENE_CMD_END(),
 };
 
@@ -24,6 +24,7 @@ s16 kokiri_home3_room_0ObjectList_000040[] = {
     OBJECT_KW1,
     OBJECT_OS_ANIME,
     OBJECT_TSUBO,
+    OBJECT_VASE,
 };
 
 ActorEntry kokiri_home3_room_0ActorList_000048[] = {
@@ -31,8 +32,8 @@ ActorEntry kokiri_home3_room_0ActorList_000048[] = {
     { ACTOR_EN_KO,     {   -123,     16,     92 }, {      0, 0X5BBC,      0 }, 0xFF09 },
     { ACTOR_OBJ_TSUBO, {     33,      0,    -55 }, {      0,      0,      0 }, 0x4300 },
     { ACTOR_OBJ_TSUBO, {     35,      0,     57 }, {      0,      0,      0 }, 0x4501 },
-    { ACTOR_PLAYER,    {      0,      0,      0 }, {      0,      0,      0 }, 0x0000 },
-    { ACTOR_PLAYER,    {      0,      0,      0 }, {      0,      0,      0 }, 0x0000 },
+    { ACTOR_EN_VASE,   {     78,     41,    -50 }, {      0,      0,      0 }, 0x0000 },
+    { ACTOR_EN_VASE,   {     75,     41,     51 }, {      0,      0,      0 }, 0x0000 },
     { ACTOR_PLAYER,    {      0,      0,      0 }, {      0,      0,      0 }, 0x0000 },
     { ACTOR_PLAYER,    {      0,      0,      0 }, {      0,      0,      0 }, 0x0000 },
     { ACTOR_PLAYER,    {      0,      0,      0 }, {      0,      0,      0 }, 0x0000 },
