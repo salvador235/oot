@@ -33,7 +33,18 @@ void ConsoleLogo_PrintBuildInfo(Gfx** gfxp) {
 // Note: In other rom versions this function also updates unk_1D4, coverAlpha, addAlpha, visibleDuration to calculate
 // the fade-in/fade-out + the duration of the n64 logo animation
 void ConsoleLogo_Calc(ConsoleLogoState* this) {
-    this->exit = true;
+    if (this->coverAlpha == 0 && this->visibleDuration != 0) {
+        this->visibleDuration--;
+    } else {
+        this->coverAlpha += this->addAlpha;
+        if (this->coverAlpha <= 0) {
+            this->coverAlpha = 0;
+            this->addAlpha = 3;
+        } else if (this->coverAlpha >= 255) {
+            this->coverAlpha = 255;
+            this->exit = true;
+        }
+    }
 }
 
 void ConsoleLogo_SetupView(ConsoleLogoState* this, f32 x, f32 y, f32 z) {
