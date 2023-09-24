@@ -4046,6 +4046,7 @@ void Audio_SetSoundProperties(u8 bankId, u8 entryIdx, u8 channelIdx) {
 
             case NA_SE_SY_ATTENTION_ON_OLD:
                 break;
+                
             default:
                 break;
         }
