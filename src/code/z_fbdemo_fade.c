@@ -62,16 +62,26 @@ void TransitionFade_Update(void* thisx, s32 updateRate) {
             this->fadeColor.a = (this->fadeDirection != 0) ? 255 - alpha : alpha;
             break;
         case 2:
+            // Deku Nut
             newAlpha = this->fadeColor.a;
             if (iREG(50) != 0) {
+                // Set viscvg type 2
+                R_FB_FILTER_TYPE = 2;
+                R_FB_FILTER_A = newAlpha;
+
                 if (iREG(50) < 0) {
-                    if (Math_StepToS(&newAlpha, 255, 255)) {
-                        iREG(50) = 150;
+                    if (Math_StepToS(&newAlpha, 255, 100)) {
+                        R_ENABLE_FB_FILTER = 1;
+                        R_FB_FILTER_PRIM_COLOR(0) = 255;
+                        R_FB_FILTER_PRIM_COLOR(1) = 255;
+                        R_FB_FILTER_PRIM_COLOR(2) = 255;
+                        iREG(50) = 15;
                     }
                 } else {
                     Math_StepToS(&iREG(50), 20, 60);
                     if (Math_StepToS(&newAlpha, 0, iREG(50))) {
                         iREG(50) = 0;
+                        R_ENABLE_FB_FILTER = 0;
                         this->isDone = true;
                     }
                 }
