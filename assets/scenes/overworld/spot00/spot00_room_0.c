@@ -16,8 +16,8 @@ SceneCmd spot00_room_0Commands[] = {
     SCENE_CMD_TIME_SETTINGS(255, 255, 10),
     SCENE_CMD_WIND_SETTINGS(80, 80, 80, 0),
     SCENE_CMD_MESH(&spot00_room_0PolygonType2_000520),
-    SCENE_CMD_OBJECT_LIST(7, spot00_room_0ObjectList_000080),
-    SCENE_CMD_ACTOR_LIST(73, spot00_room_0ActorList_000090),
+    SCENE_CMD_OBJECT_LIST(8, spot00_room_0ObjectList_000080),
+    SCENE_CMD_ACTOR_LIST(74, spot00_room_0ActorList_000090),
     SCENE_CMD_END(),
 };
 
@@ -44,6 +44,7 @@ s16 spot00_room_0ObjectList_000080[] = {
     OBJECT_PEEHAT,
     OBJECT_BOMBIWA,
     OBJECT_SKB,
+    OBJECT_WF,
 };
 
 ActorEntry spot00_room_0ActorList_000090[] = {
@@ -120,6 +121,7 @@ ActorEntry spot00_room_0ActorList_000090[] = {
     { ACTOR_OBJ_BOMBIWA,        {  -4450,   -300,   -425 }, {      0, 0X8000,      0 }, 0x8010 },
     { ACTOR_DOOR_ANA,           {  -4450,   -300,   -425 }, {      0,      0,      0 }, 0x10FF },
     { ACTOR_SHOT_SUN,           {   5143,    -55,   5012 }, {      0,      0,      0 }, 0xFF41 },
+    { ACTOR_EN_ENCOUNT1,        {    116,    192,   6206 }, {      0,      0,      0 }, 0x18A4 },
 };
 
 PolygonType2 spot00_room_0PolygonType2_000520 = { 
@@ -282,8 +284,8 @@ SceneCmd spot00_room_0Set_000C50[] = {
     SCENE_CMD_TIME_SETTINGS(255, 255, 10),
     SCENE_CMD_WIND_SETTINGS(80, 80, 80, 0),
     SCENE_CMD_MESH(&spot00_room_0PolygonType2_000520),
-    SCENE_CMD_OBJECT_LIST(9, spot00_room_0ObjectList_000C98),
-    SCENE_CMD_ACTOR_LIST(71, spot00_room_0ActorList_000CAC),
+    SCENE_CMD_OBJECT_LIST(10, spot00_room_0ObjectList_000C98),
+    SCENE_CMD_ACTOR_LIST(72, spot00_room_0ActorList_000CAC),
     SCENE_CMD_END(),
 };
 
@@ -297,6 +299,7 @@ s16 spot00_room_0ObjectList_000C98[] = {
     OBJECT_OS_ANIME,
     OBJECT_MM,
     OBJECT_GI_OCARINA,
+    OBJECT_WF,
 };
 
 ActorEntry spot00_room_0ActorList_000CAC[] = {
@@ -371,6 +374,7 @@ ActorEntry spot00_room_0ActorList_000CAC[] = {
     { ACTOR_OBJ_BOMBIWA,        {   -270,   -500,  12350 }, {      0,      0,      0 }, 0x8008 },
     { ACTOR_DOOR_ANA,           {  -4450,   -300,   -425 }, {      0,      0,      0 }, 0x10FF },
     { ACTOR_SHOT_SUN,           {   5143,    -55,   5012 }, {      0,      0,      0 }, 0xFF41 },
+    { ACTOR_EN_ENCOUNT1,        {    116,    192,   6206 }, {      0,      0,      0 }, 0x18A4 },
 };
 
 u8 spot00_room_0_possiblePadding_00111C[] = {

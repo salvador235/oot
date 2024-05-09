@@ -22155,12 +22155,12 @@ DEFINE_MESSAGE(0x3043, TEXTBOX_TYPE_BLACK, TEXTBOX_POS_VARIABLE,
 
 DEFINE_MESSAGE(0x3044, TEXTBOX_TYPE_BLACK, TEXTBOX_POS_MIDDLE,
 "Thank you very much for\n"
-"saving us!" PERSISTENT
+"saving us!"
 ,
 "Dank sei Dir, denn Du hast uns \n"
-"gerettet!" PERSISTENT
+"gerettet!"
 ,
-"Merci de nous avoir sauvés!" PERSISTENT
+"Merci de nous avoir sauvés!"
 )
 
 DEFINE_MESSAGE(0x3045, TEXTBOX_TYPE_BLACK, TEXTBOX_POS_MIDDLE,
